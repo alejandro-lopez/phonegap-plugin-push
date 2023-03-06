@@ -1,4 +1,4 @@
-const { join } = require('path');
+/*const { join } = require('path');
 const { existsSync, readFileSync, writeFileSync } = require('fs');
 const { parseElementtreeSync: ParseElementtreeSync } = require('cordova-common/src/util/xml-helpers');
 const platform = require('cordova-android');
@@ -19,10 +19,6 @@ module.exports = function (context) {
   updateBuildGradle(context, buildGradleFilePath);
 };
 
-/**
- * This hookscript is executable only when the platform version less then 10.x
- * @returns Boolean
- */
 function isExecutable () {
   const majorVersion = parseInt(platform.version(), 10);
   return majorVersion < 10 && majorVersion >= 9;
@@ -48,3 +44,4 @@ function updateBuildGradle (context, buildGradleFilePath) {
 
   console.log(`[cordova-plugin-push::before-compile] updated "build.gradle" file with kotlin version set to: ${kotlinVersion}`);
 }
+*/
