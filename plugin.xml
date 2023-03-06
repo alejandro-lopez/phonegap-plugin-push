@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  id="@havesource/cordova-plugin-push" version="4.0.0-dev.0">
+  id="phonegap-plugin-push" version="1.0.0">
 
-  <name>Cordova Push Plugin</name>
+  <name>Phonegap Push Plugin</name>
   <description>Enable receiving push notifications on Android, iOS and Windows devices. Android uses Firebase Cloud Messaging. iOS uses Apple APNS Notifications. Windows uses Microsoft WNS Notifications.</description>
 
   <license>MIT</license>
@@ -12,7 +11,7 @@
     <clobbers target="PushNotification"/>
   </js-module>
 
-  <engines>
+  <!--<engines>
     <engine name="cordova" version=">=10.0.0"/>
     <engine name="cordova-android" version=">=9.0.0"/>
     <engine name="cordova-ios" version=">=6.0.0"/>
@@ -90,7 +89,7 @@
 
     <hook type="after_prepare" src="hooks/browser/updateManifest.js"/>
   </platform>
-
+-->
   <platform name="ios">
     <preference name="IOS_FIREBASE_MESSAGING_VERSION" default="~> 8.1.1"/>
 
