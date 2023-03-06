@@ -1,6 +1,6 @@
 {
-  "name": "@havesource/cordova-plugin-push",
-  "version": "4.0.0-dev.0",
+  "name": "phonegap-plugin-push",
+  "version": "1.0.0",
   "description": "Register and receive push notifications.",
   "scripts": {
     "build": "babel src/js --out-dir www",
@@ -11,13 +11,10 @@
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "test": "npm run build && npm run lint && npm run jasmine"
   },
-  "repository": "github:havesource/cordova-plugin-push",
+  "repository": "github:alejandr-lopez/phonegap-plugin-push",
   "keywords": [
     "ecosystem:cordova",
-    "cordova-ios",
-    "cordova-android",
-    "cordova-windows",
-    "cordova-browser"
+    "cordova-ios"
   ],
   "author": "Erisu",
   "license": "MIT",
@@ -40,29 +37,23 @@
     "cordovaDependencies": {
       "3.0.0": {
         "cordova": ">=10.0.0",
-        "cordova-android": ">=9.0.0",
         "cordova-ios": ">=6.0.0"
       },
       "2.0.0": {
         "cordova": ">=10.0.0",
-        "cordova-android": ">=8.0.0",
         "cordova-ios": ">=6.0.0"
       },
       "1.0.0": {
         "cordova": ">=10.0.0",
-        "cordova-android": ">=8.0.0",
         "cordova-ios": ">=5.1.1"
       }
     }
   },
   "types": "./types/index.d.ts",
   "cordova": {
-    "id": "@havesource/cordova-plugin-push",
+    "id": "phonegap-plugin-push",
     "platforms": [
-      "ios",
-      "android",
-      "windows",
-      "browser"
+      "ios"
     ]
   }
 }
